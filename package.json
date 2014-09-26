@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "latest",
+    "jade": "latest",
+    "body-parser": "latest",
+    "ng-resource": "latest"
+  }
+}

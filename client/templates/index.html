@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="app">
+<body>
+<head>
+    <title>Express CRUD App.</title>
+</head>
+<h1>Content</h1>
+<hr/>
+<div id="content" ng-controller="todoCtrl">
+    <ul>
+        <li ng-repeat="item in items"> {{item.name}}</li>
+    </ul>
+
+    <form>
+        <input type="text" ng-model="todoName"/>
+        <button type="submit" ng-click="createTodo()">Add TODO</button>
+        <br/>
+        <button type="submit" ng-click="deleteTodo()">Remove TODOS</button>
+    </form>
+
+</div>
+<!-- /#content -->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.js"></script>
+<script type="text/javascript" src="/javascript/angular_app.js"></script>
+<script type="text/javascript" src="/javascript/angular_controllers/todo.js"></script>
+
+</body>
+</html>
